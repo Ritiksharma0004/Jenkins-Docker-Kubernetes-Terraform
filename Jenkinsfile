@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        ACR_NAME = 'acrrathore01'
+        ACR_NAME = 'acrsharma01'
         AZURE_CREDENTIALS_ID = 'jenkins-pipeline-sp'
         ACR_LOGIN_SERVER = "${ACR_NAME}.azurecr.io"
         IMAGE_NAME = 'webapidocker1'
@@ -15,7 +15,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/Aryan-Raj-Singh-Rathore/Jenkins-Docker-Kubernetes-Terraform.git'
+                git branch: 'main', url: 'https://github.com/Ritiksharma0004/Jenkins-Docker-Kubernetes-Terraform'
             }
         }
 
